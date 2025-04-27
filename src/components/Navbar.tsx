@@ -76,19 +76,19 @@ const Navbar = () => {
                 <Link to="/orders">Мои заказы</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/selling">Мои товары</Link>
+                <Link to="/profile">Мои товары</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/wallet">Кошелёк</Link>
+                <Link to="/profile">Кошелёк</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link to="/settings">Настройки</Link>
+                <Link to="/profile">Настройки</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           
-          <Button size="sm" className="hidden md:flex">
-            Добавить товар
+          <Button size="sm" className="hidden md:flex" asChild>
+            <Link to="/create-listing">Добавить товар</Link>
           </Button>
           
           <Button variant="ghost" size="icon" className="md:hidden">
